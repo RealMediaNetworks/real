@@ -1,0 +1,270 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/OpenSans/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/OpenSans/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OpenSans/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OpenSans/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/OpenSans/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/OpenSans/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
+
+
+/* Make images to keep proportion */
+img { max-width: 100%; }
+
+.nav { display: block; }
+
+nav img {
+  width: 180px;
+}
+
+a { color: #F47B39;}
+a:hover { color: #F8935A;}
+a.is-active { color: #F8935A;}
+
+.content { padding: 20px 15px 20px 15px; }
+
+.footer {
+  background-color: #333031;
+  color: aliceblue;
+  padding: 40px 0 30px 0;
+}
+
+
+
+/* TABS starts */
+
+div.tabs { margin: 1em 0; }
+
+ul.tabs {
+  list-style: none;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+.tabs > li {
+  display: inline-block;
+  margin-right: 0.3em; /* LTR */
+}
+
+[dir="rtl"] .tabs > li {
+  margin-left: 0.3em;
+  margin-right: 0;
+}
+
+.tabs a {
+  display: block;
+  padding: 0.2em 1em;
+  text-decoration: none;
+}
+
+.tabs a.is-active { background-color: #eee; }
+
+.tabs a:focus,
+.tabs a:hover {
+  background-color: #f5f5f5;
+}
+
+/* TABS ends */
+
+
+/* BLOCKQUOTE starts */
+
+blockquote {
+  font-size: 1.4em;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #ededed ;
+  line-height:1.6;
+  position: relative;
+  background:#fafafa;
+}
+
+blockquote::before {
+  content: "\201C";
+  color:#F47B39;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after {
+  content: '';
+}
+
+blockquote span {
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+  text-align: right;
+}
+
+/* BLOCKQUOTE ends */
+
+/* user-login-form */
+
+.user-login-form,
+.user-form,
+.user-pass{
+  max-width: 650px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  padding: 10px 30px;
+  background: #FBFBFB;
+}
+
+.user-login-form .form-text,
+.user-login-form .form-email,
+.user-form .form-text,
+.user-form .form-email,
+.user-pass .form-text{
+  width: 100%;
+}
+
+.form-composite > .fieldset-wrapper > .description,
+.form-item .description {
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+}
+
+/* user-login-form ends */
+
+/* Styles */
+
+.main-header{
+  color: #fff;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+}
+
+.main-header:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 17, 16, 0.4);
+}
+.main-header .region{
+  position: relative;
+  z-index: 2;
+}
+
+/** Banner **/
+
+.banner {
+  color: #fff;
+  text-align: center;
+  height:100%;
+  line-height: 160%;
+  padding: 190px 0;
+}
+
+.banner h1 {
+  color: #fff;
+  text-align: center;
+}
+/** Banner ends **/
+
+.mensajes {
+  padding: 10px 0 10px 0;
+}
+
+.landingcontent {
+  padding: 30px 0 30px 0;
+}
+
+.paragraph--type--paronecol {
+  padding: 30px 0 30px 0;
+}
+.paragraph--type--partwocol {
+  padding: 30px 0 30px 0;
+}
+.paragraph--type--parthreecol {
+  padding: 30px 0 30px 0;
+}
+.paragraph--type--formulario {
+  padding: 30px 0 30px 0;
+}
+/* Styles */
+
+.seven-details {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #fcfcfa;
+  border: none;
+  border-radius: 3px;
+}
+
+
+/** Hamburger menu color override **/
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: rgba(255,255,255,.1);
+}
+
+/* Webform */
+
+/* Formulario de contacto del sitio. */
+
+label {
+  color: #333;
+  font-size: .8em;
+  line-height: 1em;
+  margin: 1rem 0 .1rem 0;
+}
+
+.webform-button--submit {
+  margin: 10px 0 20px 0;
+}
+
+/* Webform text area */
+.form-textarea {
+  padding: 5px;
+  width:100%;
+}
+
+/* Webform International telefono field */
+.intl-tel-input {
+    position: relative;
+    display: block;
+}
+
+/* Table related styles */
+
+.table td, .table th {
+    padding: .3rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    font-size: .8em;
+}
+
+/* Panel create content button */
+
+.botonpanel {
+  padding: 2em;
+}

@@ -1,0 +1,31 @@
+/* Small devices */
+
+@media (min-width:1px) and (max-width:415px) {
+
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+
+/* .banner {
+  height: 480px;
+  padding: 200px 0;  
+}
+ */
+.tabs a {font-size: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+}
